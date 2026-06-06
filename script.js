@@ -70,7 +70,7 @@ ready(() => {
   });
 
   gsap.utils
-    .toArray(".intro, .section-heading, .service-card, .project, .capability-panel, .equipment-media, .equipment-copy, .contact-inner")
+    .toArray(".intro, .section-heading, .service-card, .project, .capability-panel, .equipment-media, .equipment-copy, .contact-inner, .page-hero-content, .process-grid article")
     .forEach((item) => {
       gsap.fromTo(
         item,
