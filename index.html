@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TWB Productions is a Cape Town audio visual and event production company turning sound into an experience."
+    />
+    <title>TWB Productions | Audio Visual Event Production Cape Town</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://videos.pexels.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="TWB Productions home">
+        <span>TWB</span>
+        <small>Productions</small>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#capability">Capability</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="#contact">Get a Quote</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="TWB Productions">
+        <video class="hero-video" autoplay muted loop playsinline poster="assets/twb-cinematic-production.png">
+          <source src="https://videos.pexels.com/video-files/3321797/3321797-hd_1920_1080_25fps.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-scrim"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Cape Town Audio Visual Production</p>
+          <h1>TURNING SOUND INTO AN EXPERIENCE</h1>
+          <p class="subheadline">Professional Audio Visual Production for unforgettable events.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Get a Quote</a>
+            <a class="button secondary" href="#work">View Our Work</a>
+          </div>
+        </div>
+        <div class="hero-rail" aria-label="Production highlights">
+          <span>Concert Audio</span>
+          <span>LED Walls</span>
+          <span>Live Streaming</span>
+        </div>
+      </section>
+
+      <section class="intro section-pad">
+        <div class="section-kicker">Luxury AV, engineered precisely</div>
+        <div class="intro-copy">
+          <h2>Cinematic production systems for corporate moments, live stages, festivals, launches, and brand experiences.</h2>
+          <p>
+            TWB Productions brings together professional audio systems, visual displays, lighting, staging, streaming, and event technology into one controlled production environment.
+          </p>
+        </div>
+      </section>
+
+      <section id="services" class="services section-pad">
+        <div class="section-heading">
+          <p class="section-kicker">Production Disciplines</p>
+          <h2>Smooth, technical, invisible when it needs to be.</h2>
+        </div>
+        <div class="service-track">
+          <article class="service-card" style="--image: url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80')">
+            <i data-lucide="audio-lines"></i>
+            <h3>Audio Production</h3>
+            <p>Line arrays, wireless systems, mixing consoles, monitors, and tuned coverage for every seat.</p>
+          </article>
+          <article class="service-card" style="--image: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80')">
+            <i data-lucide="panel-top"></i>
+            <h3>Visual Production</h3>
+            <p>LED screens, projection, playback, switching, and polished visual systems for high-impact rooms.</p>
+          </article>
+          <article class="service-card" style="--image: url('https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=80')">
+            <i data-lucide="radio-tower"></i>
+            <h3>Live Events</h3>
+            <p>Corporate events, concerts, festivals, launches, and private productions run with show-day discipline.</p>
+          </article>
+          <article class="service-card" style="--image: url('https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1200&q=80')">
+            <i data-lucide="lightbulb"></i>
+            <h3>Stage & Lighting</h3>
+            <p>Lighting design, rigging, truss, staging, haze, and cue-driven atmospheres with premium finish.</p>
+          </article>
+          <article class="service-card" style="--image: url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1200&q=80')">
+            <i data-lucide="video"></i>
+            <h3>Streaming Solutions</h3>
+            <p>Camera operators, live switching, hybrid events, broadcast capture, and reliable stream delivery.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" class="work section-pad">
+        <div class="section-heading split">
+          <div>
+            <p class="section-kicker">Portfolio</p>
+            <h2>Event production that looks expensive before anyone hears a note.</h2>
+          </div>
+          <div class="filters" aria-label="Portfolio filters">
+            <button class="filter active" type="button" data-filter="all">All</button>
+            <button class="filter" type="button" data-filter="corporate">Corporate</button>
+            <button class="filter" type="button" data-filter="concert">Concerts</button>
+            <button class="filter" type="button" data-filter="festival">Festivals</button>
+          </div>
+        </div>
+        <div class="portfolio-grid">
+          <article class="project large" data-category="concert" style="--image: url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1600&q=85')">
+            <div>
+              <span>Concert Production</span>
+              <h3>Full-scale stage, LED wall, lighting and front-of-house audio.</h3>
+            </div>
+          </article>
+          <article class="project" data-category="corporate" style="--image: url('https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1200&q=85')">
+            <div>
+              <span>Corporate</span>
+              <h3>Executive keynote with broadcast-ready capture.</h3>
+            </div>
+          </article>
+          <article class="project" data-category="festival" style="--image: url('https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=1200&q=85')">
+            <div>
+              <span>Festival</span>
+              <h3>Outdoor systems built for scale, clarity, and impact.</h3>
+            </div>
+          </article>
+          <article class="project wide" data-category="corporate" style="--image: url('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1600&q=85')">
+            <div>
+              <span>Transformation</span>
+              <h3>Before-to-after stage design, lighting, display and sound integration.</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="capability" class="capability section-pad">
+        <div class="capability-panel">
+          <div class="panel-copy">
+            <p class="section-kicker">Cape Town Capability</p>
+            <h2>One production partner from first brief to final applause.</h2>
+            <p>
+              From portable UHF microphones and compact boardroom systems to festival-grade stages, TWB Productions designs the technical layer around the audience, venue and moment.
+            </p>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <strong data-count="250">0</strong>
+              <span>Events Produced</span>
+            </div>
+            <div class="stat">
+              <strong data-count="12">0</strong>
+              <span>Production Categories</span>
+            </div>
+            <div class="stat">
+              <strong data-count="98">0</strong>
+              <span>Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="equipment section-pad">
+        <div class="equipment-media"></div>
+        <div class="equipment-copy">
+          <p class="section-kicker">Signal. Light. Image. Flow.</p>
+          <h2>Professional systems selected for clean execution under pressure.</h2>
+          <ul>
+            <li>Professional Audio Systems</li>
+            <li>Event Sound Engineering</li>
+            <li>LED Screens & Visual Displays</li>
+            <li>Stage Production</li>
+            <li>Lighting Design</li>
+            <li>Event Technology Solutions</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section-pad">
+        <div class="contact-inner">
+          <p class="section-kicker">Book the room before the room books you</p>
+          <h2>Bring TWB Productions into your next event.</h2>
+          <p>Cape Town-based AV production for corporate events, concerts, festivals, live streams, launches, and luxury private productions.</p>
+          <div class="contact-actions">
+            <a class="button primary" href="mailto:info@twbproductions.co.za">info@twbproductions.co.za</a>
+            <a class="button secondary" href="#services">Explore Services</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
