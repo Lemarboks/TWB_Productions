@@ -144,8 +144,8 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  filter: saturate(1.08) contrast(1.08) brightness(0.62);
-  transform: scale(1.04);
+  filter: saturate(1.18) contrast(1.05) brightness(0.92);
+  transform: scale(1.02);
   z-index: -4;
 }
 
@@ -156,8 +156,8 @@ a {
 .hero-scrim {
   z-index: -3;
   background:
-    linear-gradient(90deg, rgba(5, 5, 5, 0.88), rgba(5, 5, 5, 0.44) 52%, rgba(5, 5, 5, 0.78)),
-    linear-gradient(180deg, rgba(5, 5, 5, 0.18), #050505 96%);
+    linear-gradient(90deg, rgba(5, 5, 5, 0.66), rgba(5, 5, 5, 0.22) 52%, rgba(5, 5, 5, 0.56)),
+    linear-gradient(180deg, rgba(5, 5, 5, 0.04), rgba(5, 5, 5, 0.2) 62%, #050505 98%);
 }
 
 .hero-grid {
@@ -173,6 +173,7 @@ a {
 .hero-content {
   width: min(1060px, 100%);
   text-align: center;
+  text-shadow: 0 4px 32px rgba(0, 0, 0, 0.72);
 }
 
 .eyebrow,
