@@ -565,6 +565,13 @@ h2 {
   transition: transform 220ms ease, filter 220ms ease;
 }
 
+.equipment-item figcaption {
+  padding: 16px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
 .equipment-item:hover img {
   transform: scale(1.035);
   filter: brightness(1.08);
