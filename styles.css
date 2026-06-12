@@ -536,6 +536,18 @@ h2 {
   margin-top: clamp(10px, 3vw, 22px);
 }
 
+.equipment-gallery-preview {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.equipment-gallery-large {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.equipment-catalog .section-heading {
+  margin-inline: auto;
+}
+
 .equipment-item {
   margin: 0;
   overflow: hidden;
