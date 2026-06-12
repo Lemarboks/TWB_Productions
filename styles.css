@@ -700,6 +700,10 @@ h2 {
   grid-column: span 2;
 }
 
+.project.event-poster {
+  min-height: 360px;
+}
+
 .project::after {
   content: "";
   position: absolute;
