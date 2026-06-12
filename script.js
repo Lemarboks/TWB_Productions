@@ -11,6 +11,25 @@ ready(() => {
     window.lucide.createIcons();
   }
 
+  const menuToggle = document.querySelector(".menu-toggle");
+  const primaryNav = document.querySelector(".desktop-nav");
+
+  if (menuToggle && primaryNav) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = primaryNav.classList.toggle("is-open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+    });
+
+    primaryNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        primaryNav.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open menu");
+      });
+    });
+  }
+
   const filters = document.querySelectorAll(".filter");
   const projects = document.querySelectorAll(".project");
 

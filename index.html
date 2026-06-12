@@ -23,7 +23,7 @@
         <span>TWB</span>
         <small>Productions</small>
       </a>
-      <nav class="desktop-nav" aria-label="Primary navigation">
+      <nav class="desktop-nav" id="primary-navigation" aria-label="Primary navigation">
         <a href="services.html">Services</a>
         <a href="equipment.html">Hire Equipment</a>
         <a href="work.html">Work</a>
@@ -31,6 +31,9 @@
         <a href="contact.html">Contact</a>
       </nav>
       <a class="nav-cta" href="contact.html">Get a Quote</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
+        <i data-lucide="menu"></i>
+      </button>
     </header>
 
     <main id="top">
@@ -42,11 +45,6 @@
           <p class="eyebrow">Amapiano x R&B DJs</p>
           <h1>TURNING SOUND INTO AN EXPERIENCE</h1>
           <p class="subheadline">DJ-led sound, lighting and staging for Amapiano, R&B, nightlife and unforgettable private events.</p>
-          <div class="work-genre-strip" aria-label="TWB music styles">
-            <span>Amapiano DJs</span>
-            <span>R&B DJs</span>
-            <span>Sound x Lighting</span>
-          </div>
           <div class="hero-actions">
             <a class="button primary" href="contact.html">Get a Quote</a>
             <a class="button secondary" href="work.html">View Our Work</a>
@@ -119,23 +117,29 @@
           <h2>High-impact environments for audiences, cameras, and clients.</h2>
           <a class="text-link" href="work.html">Explore the portfolio</a>
         </div>
-        <div class="portfolio-grid compact">
-          <article class="project" data-category="concert" style="--image: url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1600&q=85')">
+        <div class="portfolio-grid compact home-events">
+          <article class="project" data-category="events" style="--image: url('assets/home-event-crowd-1.jpg')">
             <div>
-              <span>Concert Production</span>
-              <h3>Full-scale stage, LED wall, lighting and front-of-house audio.</h3>
+              <span>Events</span>
+              <h3>Amapiano x R&B crowd energy with TWB behind the sound.</h3>
             </div>
           </article>
-          <article class="project" data-category="corporate" style="--image: url('https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1200&q=85')">
+          <article class="project" data-category="events" style="--image: url('assets/home-event-crowd-2.jpg')">
             <div>
-              <span>Corporate</span>
-              <h3>Executive keynote with broadcast-ready capture.</h3>
+              <span>DJ Culture</span>
+              <h3>Media, moments and music captured inside the room.</h3>
             </div>
           </article>
-          <article class="project" data-category="festival" style="--image: url('https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=1200&q=85')">
+          <article class="project" data-category="events" style="--image: url('assets/home-event-crowd-3.jpg')">
             <div>
-              <span>Festival</span>
-              <h3>Outdoor systems built for scale, clarity, and impact.</h3>
+              <span>Nightlife</span>
+              <h3>Dance-floor production for packed private and public events.</h3>
+            </div>
+          </article>
+          <article class="project" data-category="events" style="--image: url('assets/home-event-crowd-4.jpg')">
+            <div>
+              <span>Selectors</span>
+              <h3>DJ-led rooms powered by sound, lighting and atmosphere.</h3>
             </div>
           </article>
         </div>
