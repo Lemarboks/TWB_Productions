@@ -144,7 +144,7 @@ a {
   position: absolute;
   inset: 0;
   z-index: -5;
-  background: url("assets/twb-hero-djs.jpg") center/cover;
+  background: url("assets/twb-hero-background.png") center/cover;
   filter: blur(28px) saturate(1.15) brightness(0.48);
   transform: scale(1.08);
 }
