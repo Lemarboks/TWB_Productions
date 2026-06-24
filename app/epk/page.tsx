@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Disc3, Download, Headphones, MapPin, Music2 } from "lucide-react";
+import { assetPath } from "@/lib/paths";
 
 export const metadata: Metadata = {
   title: "Electronic Press Kit",
@@ -28,7 +29,7 @@ export default function EpkPage() {
     <main>
       {/* ── Hero ── */}
       <section className="relative min-h-[88vh] overflow-hidden pt-20">
-        <Image src="/assets/work-hero-background.png" alt="TWB Productions live DJ performance" fill priority sizes="100vw" className="object-cover" />
+        <Image src={assetPath("/assets/work-hero-background.png")} alt="TWB Productions live DJ performance" fill priority sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-linear-to-r from-ink via-ink/70 to-transparent" />
         <div className="noise pointer-events-none absolute inset-0 opacity-[.07]" />
         <div className="site-shell relative z-10 flex min-h-[88vh] items-end pb-16">
@@ -73,7 +74,7 @@ export default function EpkPage() {
       <section className="section-pad site-shell">
         <div className="grid gap-5 lg:grid-cols-[1.25fr_.75fr]">
           <div className="relative min-h-120 overflow-hidden rounded-3xl">
-            <Image src="/assets/twb-cinematic-production.png" alt="TWB cinematic stage and event production" fill sizes="(max-width: 1024px) 100vw, 66vw" className="object-cover" />
+            <Image src={assetPath("/assets/twb-cinematic-production.png")} alt="TWB cinematic stage and event production" fill sizes="(max-width: 1024px) 100vw, 66vw" className="object-cover" />
           </div>
           <div className="glass flex flex-col justify-end rounded-3xl p-8">
             <p className="eyebrow">Technical</p>

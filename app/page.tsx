@@ -7,6 +7,7 @@ import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { getUpcomingEvents } from "@/lib/events";
 import { services } from "@/lib/constants";
+import { assetPath } from "@/lib/paths";
 
 const gallery = ["home-event-crowd-1.jpg", "home-event-crowd-2.jpg", "twb-cinematic-production.png", "home-event-crowd-3.jpg", "home-event-crowd-4.jpg"];
 const testimonials = [
@@ -29,7 +30,7 @@ export default async function Home() {
     <main>
       {/* ── Hero ── */}
       <section className="relative flex min-h-svh items-end overflow-hidden pb-14 pt-32 sm:pb-20">
-        <Image src="/assets/twb-hero-background.png" alt="DJs performing at a TWB Productions event" fill priority sizes="100vw" className="object-cover object-center" />
+        <Image src={assetPath("/assets/twb-hero-background.png")} alt="DJs performing at a TWB Productions event" fill priority sizes="100vw" className="object-cover object-center" />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,2,8,.82),rgba(5,2,8,.18)),linear-gradient(0deg,#050208_0%,transparent_55%)]" />
         <div className="grid-fade absolute inset-0" />
         <div className="noise pointer-events-none absolute inset-0 opacity-[.09]" />
@@ -102,7 +103,7 @@ export default async function Home() {
         <section className="section-pad site-shell">
           <div className="grid overflow-hidden rounded-3xl border border-violet/20 bg-panel shadow-[0_0_60px_rgba(139,92,246,.08)] lg:grid-cols-2">
             <div className="relative min-h-105">
-              <Image src={featured.image_url ?? "/assets/work-hero-background.png"} alt={`${featured.title} event artwork`} fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+              <Image src={featured.image_url ?? assetPath("/assets/work-hero-background.png")} alt={`${featured.title} event artwork`} fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-r from-transparent to-panel/30 lg:bg-gradient-to-l" />
             </div>
             <div className="flex flex-col justify-center p-7 sm:p-12">
@@ -140,7 +141,7 @@ export default async function Home() {
           {gallery.map((image, i) => (
             <Reveal key={image} className={i === 2 ? "relative col-span-2 row-span-2 overflow-hidden rounded-2xl" : "relative overflow-hidden rounded-2xl"}>
               <Image
-                src={`/assets/${image}`}
+                src={assetPath(`/assets/${image}`)}
                 alt={`TWB Productions event moment ${i + 1}`}
                 fill
                 sizes={i === 2 ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 50vw, 25vw"}

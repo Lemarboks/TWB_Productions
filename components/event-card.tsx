@@ -3,12 +3,13 @@ import Link from "next/link";
 import { ArrowUpRight, MapPin } from "lucide-react";
 import type { Event } from "@/types/database";
 import { formatEventDate } from "@/lib/utils";
+import { assetPath } from "@/lib/paths";
 
 export function EventCard({ event, priority = false }: { event: Event; priority?: boolean }) {
   return (
     <article className="group relative min-h-105 overflow-hidden rounded-2xl border border-white/10 bg-panel transition-all duration-300 hover:-translate-y-1 hover:border-violet/30 hover:shadow-[0_20px_60px_rgba(0,0,0,.5),0_0_0_1px_rgba(139,92,246,.18)]">
       <Image
-        src={event.image_url ?? "/assets/work-hero-background.png"}
+        src={event.image_url ?? assetPath("/assets/work-hero-background.png")}
         alt={`${event.title} event artwork`}
         fill
         priority={priority}
