@@ -169,7 +169,7 @@ export default async function Home() {
                   <Quote className="text-pink" size={25} />
                   <span className="text-base text-pink" aria-label="5 out of 5 stars">★★★★★</span>
                 </div>
-                <blockquote className="mt-6 text-lg leading-8 text-white/80">"{item.quote}"</blockquote>
+                <blockquote className="mt-6 text-lg leading-8 text-white/80">&ldquo;{item.quote}&rdquo;</blockquote>
                 <p className="mt-8 text-xs font-bold uppercase tracking-widest">{item.name}</p>
                 <p className="mt-1 text-xs text-white/35">{item.role}</p>
               </Reveal>
@@ -184,7 +184,7 @@ export default async function Home() {
         <div className="site-shell relative text-center">
           <Reveal>
             <p className="eyebrow">Your date. Your room. Your story.</p>
-            <h2 className="display mx-auto mt-5 max-w-4xl text-6xl sm:text-8xl">Let's make it impossible to stand still.</h2>
+            <h2 className="display mx-auto mt-5 max-w-4xl text-6xl sm:text-8xl">Let&apos;s make it impossible to stand still.</h2>
             <Link href="/book" className="button-primary mt-9">Start your booking <ArrowRight size={16} /></Link>
           </Reveal>
         </div>

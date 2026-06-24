@@ -8,6 +8,7 @@ export const siteConfig = {
 export const navItems = [
   { href: "/#services", label: "Services" },
   { href: "/events", label: "Events" },
+  { href: "/equipment", label: "Equipment" },
   { href: "/epk", label: "EPK" },
   { href: "/#gallery", label: "Gallery" },
   { href: "/contact", label: "Contact" },

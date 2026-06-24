@@ -21,7 +21,7 @@ export default function BookPage() {
         <div className="lg:sticky lg:top-32 lg:self-start">
           <p className="eyebrow">Booking enquiry</p>
           <h1 className="display mt-5 text-6xl sm:text-7xl">Tell us what the room needs to feel like.</h1>
-          <p className="mt-6 text-sm leading-7 text-white/55">Share the essentials and we'll shape the right DJ and production package around your event.</p>
+          <p className="mt-6 text-sm leading-7 text-white/55">Share the essentials and we&apos;ll shape the right DJ and production package around your event.</p>
           <div className="mt-8 space-y-3 text-sm">
             <a href="mailto:info@twbproductions.co.za" className="flex items-center gap-3 text-white/65 transition hover:text-white">
               <Mail size={17} className="text-pink" /> info@twbproductions.co.za
