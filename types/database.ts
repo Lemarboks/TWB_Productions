@@ -1,0 +1,1 @@
+export type Event = { id: string; title: string; slug: string; description: string | null; venue: string; city: string; starts_at: string; image_url: string | null; ticket_url: string | null; status: "draft" | "published" | "cancelled"; featured: boolean; };
