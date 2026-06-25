@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Mail, MessageCircle } from "lucide-react";
+import { Mail } from "lucide-react";
 import { BookingForm } from "@/components/forms/booking-form";
+import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 
 export const metadata: Metadata = {
   title: "Book a DJ or Event Production",
@@ -27,7 +28,7 @@ export default function BookPage() {
               <Mail size={17} className="text-pink" /> info@twbproductions.co.za
             </a>
             <a href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "27000000000"}`} className="flex items-center gap-3 text-white/65 transition hover:text-white">
-              <MessageCircle size={17} className="text-cyan" /> WhatsApp TWB
+              <WhatsAppIcon size={17} className="text-cyan" /> WhatsApp TWB
             </a>
           </div>
           <ul className="mt-8 space-y-2.5">
